@@ -1,0 +1,16 @@
+name: 'Consonant vowel ratio'
+author: 'Chris Trzesniewski'
+description: 'Custom GH action with TypeScript'
+
+inputs:
+  name:
+    description: 'Name to greet'
+    required: false
+    default: 'JS Marathon viewers'
+  ghToken:
+    description: 'Github access token'
+    required: false
+
+runs:
+  using: 'node16'
+  main: 'dist/index.js'

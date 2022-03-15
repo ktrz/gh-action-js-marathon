@@ -1,0 +1,29 @@
+{
+  "name": "gh-action-js-marathon",
+  "version": "0.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ktrz/gh-action-js-marathon.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ktrz/gh-action-js-marathon/issues"
+  },
+  "homepage": "https://github.com/ktrz/gh-action-js-marathon#readme",
+  "devDependencies": {
+    "@types/dedent": "^0.7.0",
+    "@types/node": "^17.0.21",
+    "typescript": "^4.6.2"
+  },
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "@actions/github": "^5.0.0",
+    "dedent": "^0.7.0"
+  }
+}
