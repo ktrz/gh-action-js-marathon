@@ -32,3 +32,4 @@ jobs:
         uses: ./
         with:
           name: 'This Dot Labs'
+          ghToken: ${{ secrets.GITHUB_TOKEN }}
