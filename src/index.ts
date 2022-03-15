@@ -1,11 +1,16 @@
-import { getInput } from "@actions/core"
+import { getInput } from "@actions/core";
+import { context } from "@actions/github";
 
-const inputName = getInput("name")
+type GithubContext = typeof context
 
-greet(inputName)
+const inputName = getInput("name");
 
-function greet(name: string) {
-    console.log(`'Hello ${name}!'`)
+greet(inputName, getRepoUrl(context));
+
+function greet(name: string, repoUrl: string) {
+  console.log(`'Hello ${name}! You are running a GH Action in ${repoUrl}'`);
 }
 
-
+function getRepoUrl({repo, serverUrl}: GithubContext): string {
+    return `${serverUrl}/${repo.owner}/${repo.repo}`
+}
