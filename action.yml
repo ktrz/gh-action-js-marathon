@@ -1,0 +1,7 @@
+name: 'Consonant vowel ratio'
+author: 'Chris Trzesniewski'
+description: 'Custom GH action with TypeScript'
+
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
